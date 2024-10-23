@@ -1,0 +1,22 @@
+#app {
+  min-height: 100vh;
+  background-image: url("https://wallpapers.com/images/featured/keyboard-background-z7fm47jyvkt01937.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#app-content {
+  background-color: rgba(0, 0, 0, 0.3);
+  > div {
+    height: 100vh;
+  }
+  > div:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.97);
+    color: black;
+  }
+  > div:nth-child(odd) {
+    color: white;
+  }
+}
