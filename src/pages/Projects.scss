@@ -1,8 +1,24 @@
 #projects {
   padding: 5rem 0;
   > h1 {
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
+  }
+}
+
+#projects-filter {
+  margin-bottom: 1rem;
+  text-align: center;
+  > button {
+    padding: 0.3rem 0.7rem;
+    margin: 0 0.3rem;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: gray;
+    color: white;
+  }
+  > button:hover {
+    font-weight: bold;
   }
 }
 
@@ -58,6 +74,9 @@
     border-radius: 0.8rem;
     background-color: gray;
     color: white;
+  }
+  > button:hover {
+    font-weight: bold;
   }
   > div {
     display: flex;
