@@ -1,15 +1,30 @@
 import "./Projects.scss";
+// React
+import { useState, useEffect } from "react";
+// Hooks
+import usePagination from "../hooks/usePagination";
 // Data
 import { projects } from "../data/projectsData";
 // Icons
 import { ImFilesEmpty } from "react-icons/im";
 
-const Projects = ({ toggleProjectMode }) => {
+const Projects = ({ toggleProjectMode, projectRef }) => {
+  const [pageContent, setPageContent] = useState(null);
+  // Hooks
+  const { currentPage, totalPages, currentData, nextPage, prevPage } = usePagination(projects, 6);
+
+  useEffect(() => {
+    let projectSlice = currentData();
+    setPageContent(projectSlice);
+    // Scroll to top
+    projectRef.current.scrollIntoView();
+  }, [currentPage]);
+  
   return (
     <div id="projects">
       <h1><ImFilesEmpty/> Projects</h1>
       <ul id="projects-list">
-        {projects.map((project, idx) => (
+        {pageContent && pageContent.map((project, idx) => (
           <li key={idx}>
             <button 
               className="projects-list-image"
@@ -25,6 +40,11 @@ const Projects = ({ toggleProjectMode }) => {
           </li>
         ))}
       </ul>
+      <div id="projects-pagination">
+        <button onClick={prevPage}>Prev</button>
+        <div>{currentPage}/{totalPages}</div>
+        <button onClick={nextPage}>Next</button>
+      </div>
     </div>
   );
 };

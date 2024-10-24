@@ -36,7 +36,9 @@ function App() {
 
         <div className="app-segment" ref={projectRef}>
           {!showProject && 
-            <Projects toggleProjectMode={toggleProjectMode}/>
+            <Projects 
+              toggleProjectMode={toggleProjectMode}
+              projectRef={projectRef}/>
           }
           {showProject && 
             <Project 
