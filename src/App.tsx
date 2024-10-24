@@ -1,6 +1,7 @@
 import './App.scss';
 // Pages
 import Profile from './pages/Profile';
+import Projects from './pages/Projects';
 // Components
 import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
@@ -15,8 +16,8 @@ function App() {
           <Profile/>
         </div>
 
-        <div id="projects" className="app-segment">
-          Projects
+        <div className="app-segment">
+          <Projects/>
         </div>
 
         <div id="contact" className="app-segment">
