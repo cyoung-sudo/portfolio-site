@@ -15,14 +15,14 @@ function App() {
   // Idx of project to show
   const [projectIdx, setProjectIdx] = useState(0);
   // Hooks
-  const projectRef = useRef(null);
+  const projectRef = useRef<HTMLDivElement | null>(null);
 
   // Switch segment between projects & project
   const toggleProjectMode = (idx?: number) => {
     if(idx) setProjectIdx(idx);
     setShowProject(!showProject);
     // Scroll to top
-    projectRef.current.scrollIntoView();
+    if(projectRef.current) projectRef.current.scrollIntoView();
   }
   
   return (

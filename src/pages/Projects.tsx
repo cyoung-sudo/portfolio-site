@@ -8,8 +8,23 @@ import { projects } from "../data/projectsData";
 // Icons
 import { ImFilesEmpty } from "react-icons/im";
 
-const Projects = ({ toggleProjectMode, projectRef }) => {
-  const [pageContent, setPageContent] = useState(null);
+interface ProjectsProps {
+  toggleProjectMode: (idx?: number) => void;
+  projectRef: React.MutableRefObject<HTMLDivElement | null>;
+}
+
+interface Project {
+  name: string;
+  about: string;
+  website: string;
+  images: string[];
+  tech: string[];
+  repos: {};
+  deployed: boolean;
+}
+
+const Projects: React.FC<ProjectsProps> = ({ toggleProjectMode, projectRef }) => {
+  const [pageContent, setPageContent] = useState<Project[] | null>(null);
   // Hooks
   const { currentPage, totalPages, currentData, nextPage, prevPage } = usePagination(projects, 6);
 
@@ -17,14 +32,14 @@ const Projects = ({ toggleProjectMode, projectRef }) => {
     let projectSlice = currentData();
     setPageContent(projectSlice);
     // Scroll to top
-    projectRef.current.scrollIntoView();
+    if(projectRef.current) projectRef.current.scrollIntoView();
   }, [currentPage]);
   
   return (
     <div id="projects">
       <h1><ImFilesEmpty/> Projects</h1>
       <ul id="projects-list">
-        {pageContent && pageContent.map((project, idx) => (
+        {pageContent && pageContent.map((project: Project, idx: number) => (
           <li key={idx}>
             <button 
               className="projects-list-image"
