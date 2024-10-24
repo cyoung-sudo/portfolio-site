@@ -1,0 +1,75 @@
+@import "react-image-gallery/styles/scss/image-gallery.scss";
+
+#project {
+  min-height: 100vh;
+  padding: 5rem 0;
+}
+
+#project-header {
+  margin-bottom: 2rem;
+  text-align: center;
+  > button {
+    margin-bottom: 1rem;
+    padding: 0.3rem 0.7rem;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: gray;
+    color: white;
+    > span {
+      position: relative;
+      bottom: 2px;
+    }
+  } 
+  > button:hover {
+    font-weight: bold;
+  }
+  > h1 {
+    margin: 0;
+  }
+}
+
+#project-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+
+#project-images {
+  width: 90vw;
+  margin-bottom: 2rem;
+}
+
+#project-info {
+  width: 90vw;
+  > div {
+    margin-bottom: 0.3rem;
+  }
+}
+
+#project-tech {
+  > span {
+    margin-right: 0.3rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  #project-images {
+    width: 50vw;
+  }
+  
+  #project-info {
+    width: 40vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  #project-images {
+    width: 40vw;
+  }
+  
+  #project-info {
+    width: 30vw;
+  }
+}
