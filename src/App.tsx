@@ -5,6 +5,7 @@ import { useState, useRef } from "react";
 import Profile from './pages/Profile';
 import Projects from './pages/Projects';
 import Project from './pages/Project';
+import Info from './pages/Info';
 // Components
 import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
@@ -47,8 +48,8 @@ function App() {
           }
         </div>
 
-        <div id="contact" className="app-segment">
-          Contact
+        <div className="app-segment">
+          <Info/>
         </div>
         <Footer/>
       </div>

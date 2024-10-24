@@ -1,0 +1,31 @@
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  > h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+#info-list {
+  padding: 0;
+  list-style: none;
+  > li {
+    > span {
+      position: relative;
+      bottom: 2px;
+      right: 5px;
+    }
+    > a {
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+    }
+    > a:hover {
+      text-decoration: underline;
+    }
+  }
+}
