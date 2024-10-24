@@ -8,15 +8,15 @@
 }
 
 #app-content {
-  background-color: rgba(0, 0, 0, 0.3);
-  > div {
-    height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  > .app-segment {
+    min-height: 100vh;
   }
-  > div:nth-child(even) {
+  > .app-segment:nth-child(odd) {
     background-color: rgba(255, 255, 255, 0.97);
     color: black;
   }
-  > div:nth-child(odd) {
+  > .app-segment:nth-child(even) {
     color: white;
   }
 }

@@ -1,0 +1,64 @@
+#profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+#profile-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 80vw;
+}
+
+#profile-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 80vw;
+}
+
+#profile-img {
+  height: 30vh;
+  width: 30vh;
+  margin-bottom: 1rem;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSytNcr7PvHh4KIOdAkDAQPnB2pyAhrPhrwQA&s");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 7rem;
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  #profile-left {
+    justify-content: center;
+    width: 40vw;
+  }
+  
+  #profile-right {
+    justify-content: center;
+    align-items: start;
+    width: 40vw;
+    font-size: 1.2rem;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  #profile-left {
+    justify-content: center;
+    width: 30vw;
+  }
+  
+  #profile-right {
+    justify-content: center;
+    align-items: start;
+    width: 30vw;
+    font-size: 1.2rem;
+  }
+}

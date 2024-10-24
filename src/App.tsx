@@ -1,18 +1,28 @@
-import './App.scss'
+import './App.scss';
+// Pages
+import Profile from './pages/Profile';
+// Components
+import NavigationBar from './components/NavigationBar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div id="app">
       <div id="app-content">
-        <div>
-          Profile
+        <NavigationBar/>
+
+        <div className="app-segment">
+          <Profile/>
         </div>
-        <div>
+
+        <div id="projects" className="app-segment">
           Projects
         </div>
-        <div>
+
+        <div id="contact" className="app-segment">
           Contact
         </div>
+        <Footer/>
       </div>
     </div>
   )
