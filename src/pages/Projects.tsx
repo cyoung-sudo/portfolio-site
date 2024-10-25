@@ -6,6 +6,8 @@ import useFilter from "../hooks/useFilter";
 import usePagination from "../hooks/usePagination";
 // Data
 import { projects } from "../data/projectsData";
+// Bootstrap
+import Badge from 'react-bootstrap/Badge';
 // Icons
 import { ImFilesEmpty } from "react-icons/im";
 
@@ -63,8 +65,12 @@ const Projects: React.FC<ProjectsProps> = ({ toggleProjectMode, projectRef }) =>
       <h1><ImFilesEmpty/> Projects</h1>
 
       <div id="projects-filter">
-        <button onClick={() => handleFilter("all")}>All</button>
-        <button onClick={() => handleFilter("deployed")}>Deployed</button>
+        <button onClick={() => handleFilter("all")}>
+          <span>All</span>
+        </button>
+        <button onClick={() => handleFilter("deployed")}>
+          <span>Deployed</span>
+        </button>
       </div>
 
       <ul id="projects-list">
@@ -80,15 +86,23 @@ const Projects: React.FC<ProjectsProps> = ({ toggleProjectMode, projectRef }) =>
               onClick={() => toggleProjectMode(project.id)}>
               {project.name}
             </button>
+            {project.deployed && <Badge bg="success">Deployed</Badge>}
+            {!project.deployed && <Badge bg="danger">Not Deployed</Badge>}
             <div className="projects-list-about">{project.about}</div>
           </li>
         ))}
       </ul>
 
       <div id="projects-pagination">
-        <button onClick={() => handlePage("prev")}>Prev</button>
-        <div>{currentPage}/{totalPages}</div>
-        <button onClick={() => handlePage("next")}>Next</button>
+        <button onClick={() => handlePage("prev")}>
+          <span>Prev</span>
+        </button>
+        <div>
+          <span>{currentPage}/{totalPages}</span>
+        </div>
+        <button onClick={() => handlePage("next")}>
+          <span>Next</span>
+        </button>
       </div>
     </div>
   );

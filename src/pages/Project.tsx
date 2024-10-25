@@ -32,7 +32,7 @@ const Project: React.FC<ProjectProps> = ({ projectIdx, toggleProjectMode }) => {
     <div id="project">
       <div id="project-header">
         <button onClick={() => toggleProjectMode()}>
-          <span><FaArrowLeft/></span> Back to Projects
+          <span><span><FaArrowLeft/></span> Back to Projects</span>
         </button>
         <h1>{project.name}</h1>
         {project.deployed && <Badge bg="success">Deployed</Badge>}
