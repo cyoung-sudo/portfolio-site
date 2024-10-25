@@ -2,6 +2,7 @@
 import { useState } from "react";
 
 interface Project {
+  id: number;
   name: string;
   about: string;
   website: string;
