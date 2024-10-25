@@ -2,7 +2,7 @@ import "./Project.scss";
 // React
 import { useState, useEffect } from "react";
 // Image gallery
-import ImageGallery from "react-image-gallery";
+import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
 // Data
 import { projects } from "../data/projectsData";
 // Bootstrap
@@ -10,9 +10,18 @@ import Badge from 'react-bootstrap/Badge';
 // Icons
 import { FaArrowLeft } from "react-icons/fa6";
 
-const Project = ({ projectIdx, toggleProjectMode }) => {
+interface ProjectProps {
+  projectIdx: number;
+  toggleProjectMode: (idx?: number) => void;
+}
+
+interface image {
+  original: string;
+}
+
+const Project: React.FC<ProjectProps> = ({ projectIdx, toggleProjectMode }) => {
   const project = projects[projectIdx];
-  const [images, setImages] = useState([]);
+  const [images, setImages] = useState<Readonly<ReactImageGalleryItem[]> | null>(null);
 
   // Extract images from project
   useEffect(() => {
@@ -36,10 +45,12 @@ const Project = ({ projectIdx, toggleProjectMode }) => {
 
       <div id="project-content">
         <div id="project-images">
-          <ImageGallery 
-            items={ images }
-            showFullscreenButton={ false }
-            showPlayButton={ false }/>
+          {images &&
+            <ImageGallery 
+              items={ images }
+              showFullscreenButton={ false }
+              showPlayButton={ false }/>
+          }
         </div>
         <div id="project-info">
           <div><b>About: </b> {project.about}</div>
