@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 0,
     name: "Image Search App",
     about: "An app that allows the user to browse for images.",
     website: "",
@@ -23,6 +24,7 @@ export const projects = [
   },
 
   {
+    id: 1,
     name: "Voting App",
     about: "An app that allows the user to create and vote on polls.",
     website: "",
@@ -48,6 +50,7 @@ export const projects = [
   },
 
   {
+    id: 2,
     name: "Nightlife Coordination App",
     about: "An app that allows the user to browse and track places they want to attend.",
     website: "",
@@ -73,6 +76,7 @@ export const projects = [
   },
 
   {
+    id: 3,
     name: "Stock Market App",
     about: "An app that allows the user to compare the weekly price-action of 2 stocks.",
     website: "",
@@ -97,6 +101,7 @@ export const projects = [
   },
 
   {
+    id: 4,
     name: "Book Trading App",
     about: "An app that allows the user to upload and trade books with other users.",
     website: "",
@@ -122,6 +127,7 @@ export const projects = [
   },
 
   {
+    id: 5,
     name: "Pinterest Clone App",
     about: "An app that allows the user to upload and share images with other users.",
     website: "",
@@ -146,6 +152,7 @@ export const projects = [
   },
 
   {
+    id: 6,
     name: "Blog App",
     about: "An app that allows the user to create and share posts with other users.",
     website: "http://34.227.172.138/",
@@ -171,6 +178,7 @@ export const projects = [
   },
 
   {
+    id: 7,
     name: "Blog App 2",
     about: "An app that allows the user to create and share posts with other users. Users can interact with each other through likes, comments, & follows.",
     website: "https://blog-app-2-client.onrender.com/users",
@@ -196,6 +204,7 @@ export const projects = [
   },
 
   {
+    id: 8,
     name: "Game 1",
     about: "A game where the player attempts to escape endless randomly-generated levels. The levels consists of mountains & enemies. Players & enemies can move in all 6 directions.",
     website: "https://cyoung-sudo.github.io/game-1/",
@@ -216,6 +225,7 @@ export const projects = [
   },
 
   {
+    id: 9,
     name: "Game 2",
     about: "A game where the player fights through endless randomly-generated levels. The levels consists of enemies & many different useable items. Players & enemies can move in 4 directions.",
     website: "https://cyoung-sudo.github.io/game-2/",
@@ -236,6 +246,7 @@ export const projects = [
   },
 
   {
+    id: 10,
     name: "Chat App",
     about: "An app that allows users to message each other on a single global chat.",
     website: "https://chat-app-client-vlae.onrender.com/",
@@ -259,6 +270,7 @@ export const projects = [
   },
 
   {
+    id: 11,
     name: "Group Chat App",
     about: "An app that allows users to message each other by joining groups.",
     website: "https://group-chat-app-client.onrender.com/",

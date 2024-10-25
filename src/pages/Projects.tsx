@@ -15,6 +15,7 @@ interface ProjectsProps {
 }
 
 interface Project {
+  id: number;
   name: string;
   about: string;
   website: string;
@@ -61,12 +62,12 @@ const Projects: React.FC<ProjectsProps> = ({ toggleProjectMode, projectRef }) =>
           <li key={idx}>
             <button 
               className="projects-list-image"
-              onClick={() => toggleProjectMode(idx)}>
+              onClick={() => toggleProjectMode(project.id)}>
               <img src={project.images[0]}/>
             </button>
             <button 
               className="projects-list-name"
-              onClick={() => toggleProjectMode(idx)}>
+              onClick={() => toggleProjectMode(project.id)}>
               {project.name}
             </button>
             <div className="projects-list-about">{project.about}</div>
