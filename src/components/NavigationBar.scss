@@ -1,3 +1,7 @@
 #navigationBar {
   background-color: rgba(255, 255, 255, 0.97);
+  > div > span {
+    font-weight: 300;
+    font-style: italic;
+  }
 }

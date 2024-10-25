@@ -20,6 +20,17 @@
   justify-content: start;
   align-items: center;
   width: 80vw;
+  > div {
+    > span {
+      position: relative;
+      bottom: 2px;
+      right: 5px;
+    }
+    > i {
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+  }
 }
 
 #profile-img {
@@ -45,6 +56,11 @@
     align-items: start;
     width: 40vw;
     font-size: 1.2rem;
+    > div {
+      > i {
+        font-size: 1rem;
+      }
+    }
   }
 }
 
@@ -60,5 +76,10 @@
     align-items: start;
     width: 30vw;
     font-size: 1.2rem;
+    > div {
+      > i {
+        font-size: 1rem;
+      }
+    }
   }
 }

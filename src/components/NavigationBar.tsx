@@ -7,7 +7,7 @@ const NavigationBar = () => {
   return (
     <Navbar id="navigationBar" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
+        <Navbar.Brand>Dev Portfolio</Navbar.Brand>
       </Container>
     </Navbar>
   );

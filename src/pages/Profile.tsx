@@ -12,9 +12,15 @@ const Profile = () => {
       </div>
 
       <div id="profile-right">
-        <div><GiGraduateCap/> University of California, Santa Cruz</div>
-        <div><GiTiedScroll/> Computer Science, B.S.</div>
-        <div><MdNumbers/> GPA 3.46</div>
+        <div>
+          <span><GiGraduateCap/></span>University of California, Santa Cruz
+        </div>
+        <div>
+          <span><GiTiedScroll/></span>Computer Science, B.S. <i>(March 2020)</i>
+        </div>
+        <div>
+          <span><MdNumbers/></span>GPA 3.46
+        </div>
       </div>
     </div>
   );
