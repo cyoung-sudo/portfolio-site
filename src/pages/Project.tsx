@@ -15,10 +15,6 @@ interface ProjectProps {
   toggleProjectMode: (idx?: number) => void;
 }
 
-interface image {
-  original: string;
-}
-
 const Project: React.FC<ProjectProps> = ({ projectIdx, toggleProjectMode }) => {
   const project = projects[projectIdx];
   const [images, setImages] = useState<Readonly<ReactImageGalleryItem[]> | null>(null);
