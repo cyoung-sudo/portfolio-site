@@ -47,6 +47,16 @@ const Projects: React.FC<ProjectsProps> = ({ toggleProjectMode, projectRef }) =>
     // Scroll to projects-segment
     if(projectRef.current) projectRef.current.scrollIntoView();
   };
+
+  const handlePage = (dir: "prev" | "next") => {
+    if(dir === "prev") {
+      prevPage();
+    } else if(dir === "next") {
+      nextPage();
+    }
+    // Scroll to projects-segment
+    if(projectRef.current) projectRef.current.scrollIntoView();
+  }
   
   return (
     <div id="projects">
@@ -76,9 +86,9 @@ const Projects: React.FC<ProjectsProps> = ({ toggleProjectMode, projectRef }) =>
       </ul>
 
       <div id="projects-pagination">
-        <button onClick={prevPage}>Prev</button>
+        <button onClick={() => handlePage("prev")}>Prev</button>
         <div>{currentPage}/{totalPages}</div>
-        <button onClick={nextPage}>Next</button>
+        <button onClick={() => handlePage("next")}>Next</button>
       </div>
     </div>
   );
