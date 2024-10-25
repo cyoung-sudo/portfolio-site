@@ -15,6 +15,7 @@
 }
 
 #app-content {
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   > .app-segment {
     min-height: 100vh;
