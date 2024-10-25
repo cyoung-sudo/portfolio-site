@@ -35,8 +35,6 @@ const Projects: React.FC<ProjectsProps> = ({ toggleProjectMode, projectRef }) =>
     // Set page content
     let projectSlice = currentData();
     setPageContent(projectSlice);
-    // Scroll to top
-    if(projectRef.current) projectRef.current.scrollIntoView();
   }, [currentPage, filteredProjects]);
 
   const handleFilter = (mode: "all" | "deployed") => {
@@ -46,6 +44,8 @@ const Projects: React.FC<ProjectsProps> = ({ toggleProjectMode, projectRef }) =>
       getDeployed();
     }
     resetPage();
+    // Scroll to projects-segment
+    if(projectRef.current) projectRef.current.scrollIntoView();
   };
   
   return (
