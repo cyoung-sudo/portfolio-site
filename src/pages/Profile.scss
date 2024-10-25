@@ -37,11 +37,13 @@
   height: 30vh;
   width: 30vh;
   margin-bottom: 1rem;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSytNcr7PvHh4KIOdAkDAQPnB2pyAhrPhrwQA&s");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 7rem;
+  border-radius: 50%; // this make circle
+  overflow: hidden; //hiding image overflow
+  object-position: center;  // you can custom the position
+  > img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 /* Medium devices such as tablets (768px and up) */

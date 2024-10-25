@@ -7,7 +7,9 @@ const Profile = () => {
   return (
     <div id="profile">
       <div id="profile-left">
-        <div id="profile-img"></div>
+        <div id="profile-img">
+          <img src="man-avatar-profile-picture.jpg"/>
+        </div>
         <h1>Christopher Young</h1>
       </div>
 

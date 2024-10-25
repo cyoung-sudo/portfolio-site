@@ -28,6 +28,7 @@ function App() {
   
   return (
     <div id="app">
+      <div id="app-image"></div>
       <div id="app-content">
         <NavigationBar/>
 

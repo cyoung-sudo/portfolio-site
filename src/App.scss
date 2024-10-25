@@ -1,6 +1,13 @@
 #app {
   min-height: 100vh;
-  background-image: url("https://wallpapers.com/images/featured/keyboard-background-z7fm47jyvkt01937.jpg");
+}
+
+#app-image {
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/keyboard-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
