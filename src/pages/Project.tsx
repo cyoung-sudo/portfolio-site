@@ -60,7 +60,7 @@ const Project: React.FC<ProjectProps> = ({ projectIdx, toggleProjectMode }) => {
           }
           <div id="project-tech"><b>Tech: </b>
             {project.tech.map((el, idx) => (
-              <Badge key={idx}>{el}</Badge>
+              <Badge key={idx} bg="secondary">{el}</Badge>
             ))}
           </div>
           {project.repos.client &&
