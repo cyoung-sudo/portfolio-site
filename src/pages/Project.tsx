@@ -56,7 +56,7 @@ const Project: React.FC<ProjectProps> = ({ projectIdx, toggleProjectMode }) => {
             </div>
           }
           {project.deployed && project.website &&
-            <div><b>Website: </b><a href={project.website}>{project.website}</a></div>
+            <div><b>Website: </b><a href={project.website} target="_blank">{project.website}</a></div>
           }
           <div id="project-tech"><b>Tech: </b>
             {project.tech.map((el, idx) => (
