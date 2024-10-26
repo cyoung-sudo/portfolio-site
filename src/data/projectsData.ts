@@ -46,7 +46,8 @@ export const projects = [
       client: "https://github.com/cyoung-sudo/voting-app-client",
       server: "https://github.com/cyoung-sudo/voting-app-server"
     },
-    deployed: false
+    deployed: false,
+    auth: true
   },
 
   {
@@ -72,7 +73,8 @@ export const projects = [
       client: "https://github.com/cyoung-sudo/nightlife-coordination-app-client",
       server: "https://github.com/cyoung-sudo/nightlife-coordination-app-server"
     },
-    deployed: false
+    deployed: false,
+    auth: true
   },
 
   {
@@ -123,7 +125,8 @@ export const projects = [
       client: "https://github.com/cyoung-sudo/book-trading-app-client",
       server: "https://github.com/cyoung-sudo/book-trading-app-server"
     },
-    deployed: false
+    deployed: false,
+    auth: true
   },
 
   {
@@ -148,7 +151,8 @@ export const projects = [
       client: "https://github.com/cyoung-sudo/pinterest-clone-app-client",
       server: "https://github.com/cyoung-sudo/pinterest-clone-app-server"
     },
-    deployed: false
+    deployed: false,
+    auth: true
   },
 
   {
@@ -174,7 +178,8 @@ export const projects = [
       client: "https://github.com/cyoung-sudo/blog-app-client",
       server: "https://github.com/cyoung-sudo/blog-app-server"
     },
-    deployed: false
+    deployed: false,
+    auth: true
   },
 
   {
@@ -200,7 +205,8 @@ export const projects = [
       client: "https://github.com/cyoung-sudo/blog-app-2-client",
       server: "https://github.com/cyoung-sudo/blog-app-2-server"
     },
-    deployed: true
+    deployed: true,
+    auth: true
   },
 
   {

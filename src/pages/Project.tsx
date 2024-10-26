@@ -50,6 +50,11 @@ const Project: React.FC<ProjectProps> = ({ projectIdx, toggleProjectMode }) => {
         </div>
         <div id="project-info">
           <div><b>About: </b> {project.about}</div>
+          {project.deployed && project.auth &&
+            <div id="project-info-warning">
+              <b>Warning: </b>Session cookies work locally, but since using subdomian hosting, they don't persist when deployed
+            </div>
+          }
           {project.deployed && project.website &&
             <div><b>Website: </b><a href={project.website}>{project.website}</a></div>
           }
