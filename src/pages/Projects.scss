@@ -1,8 +1,22 @@
 #projects {
   padding: 5rem 0;
+}
+
+#projects-header {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  text-align: center;
   > h1 {
-    margin-bottom: 2rem;
-    text-align: center;
+    font-weight: 400;
+    span {
+      position: relative;
+      bottom: 2px;
+      right: 5px;
+    }
+  }
+  > p {
+    font-weight: 300;
+    font-style: italic;
   }
 }
 
@@ -49,12 +63,14 @@
     width: 90vw;
     padding: 1rem;
     text-align: center;
+    > button, > span, > div {
+      margin-bottom: 0.5rem;
+    }
   }
 }
 
 .projects-list-image {
   width: 100%;
-  margin-bottom: 1rem;
   padding: 0;
   border: none;
   > img {

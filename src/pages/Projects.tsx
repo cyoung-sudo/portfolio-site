@@ -10,6 +10,8 @@ import { projects } from "../data/projectsData";
 import Badge from 'react-bootstrap/Badge';
 // Icons
 import { ImFilesEmpty } from "react-icons/im";
+// Styling Libraries
+import { LinearGradient } from 'react-text-gradients'
 
 interface ProjectsProps {
   toggleProjectMode: (idx?: number) => void;
@@ -62,7 +64,14 @@ const Projects: React.FC<ProjectsProps> = ({ toggleProjectMode, projectRef }) =>
   
   return (
     <div id="projects">
-      <h1><ImFilesEmpty/> Projects</h1>
+      <div id="projects-header">
+        <h1>
+          <LinearGradient gradient={['to left', 'darkcyan ,black']}>
+            <span><ImFilesEmpty/></span>Projects
+          </LinearGradient>
+        </h1>
+        <p>Frontend & Full-Stack projects I've completed in my programming journey</p>
+      </div>
 
       <div id="projects-filter">
         <button onClick={() => handleFilter("all")}>
