@@ -298,5 +298,31 @@ export const projects = [
       server: "https://github.com/cyoung-sudo/group-chat-app-server"
     },
     deployed: true
+  },
+
+  {
+    id: 12,
+    name: "CRUD Media",
+    about: "A simple app that allows users make an account & create posts. Mainly done to practice Typescript.",
+    website: "https://crud-media-client.onrender.com/",
+    images: [
+      "https://raw.githubusercontent.com/cyoung-sudo/crud-media-client/main/public/screenshot1.png",
+      "https://raw.githubusercontent.com/cyoung-sudo/crud-media-client/main/public/screenshot2.png"
+    ],
+    tech: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Typescript",
+      "React",
+      "Node",
+      "Express",
+      "MongoDB Atlas"
+    ],
+    repos: {
+      client: "https://github.com/cyoung-sudo/crud-media-client",
+      server: "https://github.com/cyoung-sudo/crud-media-server"
+    },
+    deployed: true
   }
 ];
