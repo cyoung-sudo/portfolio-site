@@ -323,6 +323,7 @@ export const projects = [
       client: "https://github.com/cyoung-sudo/crud-media-client",
       server: "https://github.com/cyoung-sudo/crud-media-server"
     },
-    deployed: true
+    deployed: true,
+    auth: true
   }
 ];
