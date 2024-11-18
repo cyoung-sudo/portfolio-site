@@ -325,5 +325,33 @@ export const projects = [
     },
     deployed: true,
     auth: true
+  },
+
+  {
+    id: 13,
+    name: "Voting App 2",
+    about: "An app that allows authenticated users to create & vote on polls.",
+    website: "https://voting-app-2-client.onrender.com",
+    images: [
+      "https://raw.githubusercontent.com/cyoung-sudo/voting-app-2-client/refs/heads/main/public/screenshot1.png",
+      "https://raw.githubusercontent.com/cyoung-sudo/voting-app-2-client/refs/heads/main/public/screenshot2.png",
+      "https://raw.githubusercontent.com/cyoung-sudo/voting-app-2-client/refs/heads/main/public/screenshot3.png"
+    ],
+    tech: [
+      "HTML",
+      "SCSS",
+      "Javascript",
+      "Typescript",
+      "React",
+      "Node",
+      "Express",
+      "MongoDB Atlas"
+    ],
+    repos: {
+      client: "https://github.com/cyoung-sudo/voting-app-2-client",
+      server: "https://github.com/cyoung-sudo/voting-app-2-server"
+    },
+    deployed: true,
+    auth: true
   }
 ];
